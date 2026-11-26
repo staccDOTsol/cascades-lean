@@ -53,3 +53,26 @@ All theorems should depend exclusively on Lean's standard axioms
 #print axioms Cascades.any_equilibrium_yield_ge_floor
 #print axioms Cascades.yieldFloor_step_pos
 #print axioms Cascades.yieldFloor_tendsto
+
+#print axioms Cascades.clmm_const_product
+#print axioms Cascades.clmm_reserves_nonneg
+#print axioms Cascades.clmm_boundary_exhaustion
+#print axioms Cascades.clmm_symmetric_depth_multiplier
+#print axioms Cascades.clmmArbProfit_eq_hodl_sub_pool
+#print axioms Cascades.clmmArbProfit_eq_sub_sq
+#print axioms Cascades.clmmArbProfit_le_clamp
+#print axioms Cascades.clmm_inRange_exact_lvr
+#print axioms Cascades.clmm_outOfRange_caps_lvr
+#print axioms Cascades.clmm_roundTrip_hodl_vs_lvr
+#print axioms Cascades.clmmEdgeVol_ge_delta
+#print axioms Cascades.clmm_complete_graph_bounds
+#print axioms Cascades.clmm_upside_convexity
+#print axioms Cascades.clmm_volume_linear_error
+#print axioms Cascades.clmm_volume_linear_isBigO
+
+#print axioms Cascades.singleShockNetPnL_pos_iff
+#print axioms Cascades.burnOnly_permanent_shock_neg
+#print axioms Cascades.cascade_netPnL_sub_direct
+#print axioms Cascades.cascade_fee_breakEven_comparison
+#print axioms Cascades.roundTrip_hodl_and_lvr
+#print axioms Cascades.fixedCost_activation_threshold
