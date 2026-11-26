@@ -36,4 +36,4 @@ jobs:
             echo "ERROR: unexpected non-standard axiom detected!"
             exit 1
           fi
-          echo "All 29 headline theorems verified with standard axioms only."
+          echo "All 42 headline theorems verified with standard axioms only."

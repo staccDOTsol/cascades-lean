@@ -39,3 +39,17 @@ All theorems should depend exclusively on Lean's standard axioms
 #print axioms Cascades.yield_snoc_gt_iff
 #print axioms Cascades.table_section3_verified
 #print axioms Cascades.table_section4_verified
+
+#print axioms Cascades.directProfit_le_opt
+#print axioms Cascades.cascade_total_profit_hasSum
+#print axioms Cascades.cascade_total_profit_eq_direct
+#print axioms Cascades.edgeVol_ge_residual_change
+#print axioms Cascades.edgeVol_ge_of_equilibrium
+#print axioms Cascades.any_equilibrium_vol_ge
+#print axioms Cascades.any_equilibrium_interface_ge
+#print axioms Cascades.any_equilibrium_taxVol_ge_shared
+#print axioms Cascades.any_equilibrium_equal_taxVol_floor
+#print axioms Cascades.any_equilibrium_equal_taxVol_unshared
+#print axioms Cascades.any_equilibrium_yield_ge_floor
+#print axioms Cascades.yieldFloor_step_pos
+#print axioms Cascades.yieldFloor_tendsto
