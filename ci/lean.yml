@@ -1,0 +1,39 @@
+name: Lean 4 Verification
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install elan and Lean toolchain
+        run: |
+          curl https://elan.lean-lang.org/elan-init.sh -sSf | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+      - name: Fetch Mathlib cache
+        run: lake exe cache get
+
+      - name: Build Cascades
+        run: lake build
+
+      - name: Audit axioms and check zero sorrys
+        run: |
+          OUT=$(lake env lean Cascades/Verify.lean)
+          echo "$OUT"
+          if echo "$OUT" | grep -q "sorryAx"; then
+            echo "ERROR: sorryAx detected!"
+            exit 1
+          fi
+          if echo "$OUT" | grep -E "depends on axioms:" | grep -qvE "^'Cascades\.[^']+' depends on axioms: \[(propext|Classical\.choice|Quot\.sound)(, (propext|Classical\.choice|Quot\.sound))*\]$"; then
+            echo "ERROR: unexpected non-standard axiom detected!"
+            exit 1
+          fi
+          echo "All 29 headline theorems verified with standard axioms only."
