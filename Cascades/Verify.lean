@@ -93,3 +93,17 @@ All theorems should depend exclusively on Lean's standard axioms
 #print axioms Cascades.trending_loses_to_hodl_eventually
 #print axioms Cascades.sum_sq_walkDisplacement
 #print axioms Cascades.randomWalk_expected_netPnL_pos_iff
+
+#print axioms Cascades.one_add_pow_ge_linear
+#print axioms Cascades.compounding_tendsto_atTop
+#print axioms Cascades.compounding_exceeds_any_finite_target
+#print axioms Cascades.bounded_yield_still_unbounded_compounding
+#print axioms Cascades.finiteExtArbProfit_le_opt
+#print axioms Cascades.effectiveDepth_lt_both
+#print axioms Cascades.effectiveDepth_saturates_at_ext
+#print axioms Cascades.saturated_yield_tendsto_zero
+#print axioms Cascades.sovereign_share_effectiveDepth
+#print axioms Cascades.sovereign_share_max_at_half
+#print axioms Cascades.sovereign_tenth_vs_half
+#print axioms Cascades.closed_system_zero_sum
+#print axioms Cascades.no_strictly_positive_closed_system
