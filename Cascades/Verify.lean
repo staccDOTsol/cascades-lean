@@ -76,3 +76,20 @@ All theorems should depend exclusively on Lean's standard axioms
 #print axioms Cascades.cascade_fee_breakEven_comparison
 #print axioms Cascades.roundTrip_hodl_and_lvr
 #print axioms Cascades.fixedCost_activation_threshold
+
+#print axioms Cascades.nav_conservation_of_backing
+#print axioms Cascades.nav_appreciation_exact
+#print axioms Cascades.nav_appreciation_gt_linear
+#print axioms Cascades.nav_exact_remainder_bounds
+#print axioms Cascades.nav_feedback_geometric_hasSum
+#print axioms Cascades.generalized_cascade_ratio
+#print axioms Cascades.generalized_ratio_special_cases
+#print axioms Cascades.tax_choke_threshold
+#print axioms Cascades.consolidated_yield_proportional_backing
+#print axioms Cascades.linear_backing_dilution_vanishes
+#print axioms Cascades.consolidated_net_roi_pos_iff
+#print axioms Cascades.multiperiod_lvr_regime_invariant
+#print axioms Cascades.meanReverting_beats_hodl_eventually
+#print axioms Cascades.trending_loses_to_hodl_eventually
+#print axioms Cascades.sum_sq_walkDisplacement
+#print axioms Cascades.randomWalk_expected_netPnL_pos_iff
